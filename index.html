@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moletons Flix — Oversize. Clean. Essencial.</title>
+  <meta name="description" content="Moletons Flix: moletons oversize básicos em preto, cinza, off-white, grafite e azul marinho. Minimalismo em algodão pesado." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Archivo:wght@600;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#top" class="logo">MOLETONS<span>FLIX</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#colecao">Nova coleção</a>
+      <a href="#loja">Loja</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="cart-btn" id="cartOpen" aria-label="Abrir sacola">
+        Sacola <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO 3D CAROUSEL -->
+    <section class="hero" id="hero">
+      <div class="hero-stage">
+        <div class="hero-text">
+          <p class="eyebrow">Coleção 01 — Inverno 2026</p>
+          <h1 class="hero-title">
+            <span class="line"><span>Oversize.</span></span>
+            <span class="line"><span>Clean.</span></span>
+            <span class="line"><span>Essencial.</span></span>
+          </h1>
+        </div>
+
+        <div class="hero-after" id="heroAfter">
+          <h2>5 cores.<br />1 caimento.</h2>
+          <p>Preto, cinza mescla, off-white, grafite e azul marinho.</p>
+        </div>
+
+        <div class="scene" id="scene">
+          <div class="ring" id="ring"></div>
+          <div class="floor-shadow"></div>
+        </div>
+
+        <div class="hero-foot">
+          <p>Moletons básicos com modelagem ampla, <br />algodão pesado e zero excesso.</p>
+          <a href="#loja" class="btn btn-dark">Comprar agora</a>
+          <div class="scroll-hint"><span></span>Role</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Cinza mescla</span><i>●</i><span>Preto</span><i>●</i><span>Off-white</span><i>●</i><span>Azul marinho</span><i>●</i><span>Grafite</span><i>●</i>
+        <span>Cinza mescla</span><i>●</i><span>Preto</span><i>●</i><span>Off-white</span><i>●</i><span>Azul marinho</span><i>●</i><span>Grafite</span><i>●</i>
+      </div>
+    </div>
+
+    <!-- NEW COLLECTION -->
+    <section class="collection" id="colecao">
+      <header class="section-head reveal">
+        <p class="eyebrow">Nova coleção</p>
+        <h2>Menos estampa.<br />Mais caimento.</h2>
+      </header>
+
+      <figure class="editorial editorial-full reveal">
+        <div class="photo parallax" data-speed="0.12" data-model="preto" data-word="PRETO" data-tone="#ececea"></div>
+        <figcaption>
+          <span>01</span>
+          <strong>Preto absoluto</strong>
+          <em>Moletom canguru oversize — 380 g/m²</em>
+        </figcaption>
+      </figure>
+
+      <div class="editorial-grid">
+        <figure class="editorial reveal">
+          <div class="frame"><div class="photo parallax tall" data-speed="0.08" data-model="cinza" data-tone="#efefed"></div></div>
+          <figcaption><span>02</span><strong>Cinza mescla</strong><em>O clássico que combina com tudo</em></figcaption>
+        </figure>
+        <figure class="editorial offset reveal">
+          <div class="frame"><div class="photo parallax tall" data-speed="0.16" data-model="offwhite" data-tone="#e6e6e3"></div></div>
+          <figcaption><span>03</span><strong>Off-white</strong><em>Tom cru, toque macio</em></figcaption>
+        </figure>
+      </div>
+
+      <figure class="editorial editorial-full reveal">
+        <div class="photo parallax" data-speed="0.12" data-img="marinho" data-bg="studio-gray" data-duo="grafite"></div>
+        <figcaption>
+          <span>04</span>
+          <strong>Marinho &amp; grafite</strong>
+          <em>Tons fechados para o dia a dia</em>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- STATEMENT -->
+    <section class="statement" id="sobre">
+      <p class="statement-text" id="statement">
+        Acreditamos que um bom moletom não precisa gritar. Ele precisa cair bem, durar anos e combinar com o resto do seu guarda-roupa. Por isso fazemos poucos modelos, em poucas cores, do jeito certo.
+      </p>
+    </section>
+
+    <!-- SHOP -->
+    <section class="shop" id="loja">
+      <header class="section-head shop-head reveal">
+        <div>
+          <p class="eyebrow">Loja</p>
+          <h2>Escolha sua cor.</h2>
+        </div>
+        <div class="filters" id="filters">
+          <button class="active" data-filter="all">Todos</button>
+          <button data-filter="escuro">Escuros</button>
+          <button data-filter="claro">Claros</button>
+        </div>
+      </header>
+      <div class="products" id="products"></div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+      <div class="feature reveal"><span>380g</span><p>Algodão felpado pesado, que mantém a forma depois de muitas lavagens.</p></div>
+      <div class="feature reveal"><span>Oversize</span><p>Ombro caído, corpo amplo e manga longa. Peça um número abaixo para um caimento regular.</p></div>
+      <div class="feature reveal"><span>0 logos</span><p>Nada de estampa gigante. Só uma etiqueta discreta na barra.</p></div>
+      <div class="feature reveal"><span>Frete grátis</span><p>Em compras acima de R$ 299 para todo o Brasil. Troca grátis em 30 dias.</p></div>
+    </section>
+
+    <!-- LOOKBOOK SPLIT -->
+    <section class="split">
+      <div class="split-photo reveal">
+        <div class="photo parallax tall" data-speed="0.1" data-img="preto" data-bg="studio-white" data-duo="cinza"></div>
+      </div>
+      <div class="split-text reveal">
+        <p class="eyebrow">Lookbook</p>
+        <h2>Feito para sobrar.</h2>
+        <p>Modelagem pensada para ficar larga no corpo, sem parecer um tamanho errado. Capuz forrado em camada dupla, punhos e barra em ribana reforçada e bolso canguru costurado em ponto duplo.</p>
+        <a href="#loja" class="btn btn-line">Ver todos os moletons</a>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter" id="contato">
+      <h2 class="reveal">Fique sabendo<br />do próximo drop.</h2>
+      <form class="news-form reveal" id="newsForm">
+        <input type="email" required placeholder="seu@email.com" aria-label="E-mail" />
+        <button type="submit" class="btn btn-light">Assinar</button>
+      </form>
+      <p class="news-msg" id="newsMsg"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-big">MOLETONS FLIX</div>
+    <div class="footer-cols">
+      <div><strong>Loja</strong><a href="#loja">Todos</a><a href="#colecao">Nova coleção</a><a href="#loja">Escuros</a></div>
+      <div><strong>Ajuda</strong><a href="#">Trocas e devoluções</a><a href="#">Guia de tamanhos</a><a href="#">Envio</a></div>
+      <div><strong>Social</strong><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Pinterest</a></div>
+    </div>
+    <p class="footer-copy">© 2026 Moletons Flix. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- CART DRAWER -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-label="Sacola">
+    <header>
+      <h3>Sacola</h3>
+      <button id="cartClose" aria-label="Fechar">Fechar</button>
+    </header>
+    <div class="drawer-items" id="drawerItems"></div>
+    <footer>
+      <div class="drawer-total"><span>Subtotal</span><strong id="cartTotal">R$ 0,00</strong></div>
+      <p class="drawer-note" id="shipNote"></p>
+      <button class="btn btn-dark full" id="checkout">Finalizar compra</button>
+    </footer>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
